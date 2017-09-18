@@ -17,10 +17,10 @@ MAIN=fastqSeqStats
 all:	$(MAIN)
 
 $(MAIN):	$(OBJS)
-	$(CC) $(CFLAGS) $(CLIBS) -o $(MAIN) $(OBJS)
+	$(CC) $(CFLAGS) -o $(MAIN) $(OBJS) $(CLIBS)
 
 .c.o:
-	$(CC) $(CFLAGS) $(CLIBS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ $(CLIBS)
 
 .PHONY: clean
 clean:
