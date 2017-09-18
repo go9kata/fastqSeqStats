@@ -8,7 +8,7 @@
 
 #include "utilities.h"
 
-const char VERSION[] = "v0.01";
+const char VERSION[] = "v1.01";
 const char PROGRAM_NAME[] = "fastqSeqStats";
 
 int parseParameters(int argc, char *argv[], Parameters *config)
