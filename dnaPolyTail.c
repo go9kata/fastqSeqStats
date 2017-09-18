@@ -76,7 +76,6 @@ int findHeadPolyTMaybeMask(DNA *dna, int size, boolean loose)
     int score = 10;
     int bestScore = 10;
     int bestPos = -1;
-    int pastPoly = 0;
     int trimSize = 0;
     
     for (i=0; i<size; ++i)
@@ -105,7 +104,6 @@ int findHeadPolyTMaybeMask(DNA *dna, int size, boolean loose)
         }
         if (score < 0)
         {
-            pastPoly = i;
             break;
         }
     }
